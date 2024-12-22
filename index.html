@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .text {
+            margin-right: 20px;
+            font-size: 1.5rem;
+            max-width: 360px;
+            color: #333;
+            text-align: right; /* Align text to the right */
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 60px;
+            flex-direction: column; /* Ensures vertical stacking */
+            width: 100%; /* Allow it to fill the container width */
+        }
+
+        .logo {
+            width: 230px;
+            height: auto;
+        }
+
+        .simple-link {
+            font-size: 1.2rem;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 10px; /* Adds spacing between the text and the link */
+            align-self: flex-end; /* Aligns the link to the right */
+        }
+
+        .simple-link:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            text-align: center;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container input {
+            padding: 15px;
+            font-size: 1.1rem;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container button {
+            padding: 15px;
+            font-size: 1.1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <div>Уебсайтът на Галерия "Лира" скоро ще бъде наличен</div>
+            <a href="#" class="simple-link">Нулев бюлетин</a> <!-- Link now aligned to the right -->
+        </div>
+        <img src="logo_lira.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="form-container">
+        <form name="contact" method="POST" data-netlify="true" action="/">
+            <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="subject" value="Case Title">
+            <input type="email" name="email" placeholder="Вашият имейл" required>
+            <button type="submit">Запишете се за нашия бюлетин</button>
+        </form>
+    </div>
+</body>
+</html>
